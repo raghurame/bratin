@@ -113,6 +113,7 @@ int main(int argc, char const *argv[])
 	distData = computeEnergy (distData, nLines, temperature);
 	printDistData (distData, nLines, output);
 
+	free (distData);
 	fclose (input);
 	fclose (output);
 	return 0;
